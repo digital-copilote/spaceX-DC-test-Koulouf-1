@@ -3,4 +3,8 @@
 Start the projet : 
 
 - $ npm install
-- - $ npm run dev
+- $ npm run dev
+
+Eslint : 
+
+- $ npm run lint
