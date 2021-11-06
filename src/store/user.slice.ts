@@ -2,7 +2,9 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '.';
 
-export interface UserState {}
+export interface UserState {
+  name: string;
+}
 
 interface UserStateWithLogged extends UserState {
   logged: boolean;
@@ -25,6 +27,7 @@ interface ReturnUseUserFromStore {
 }
 
 const initialState: UserStateWithLogged = {
+  name: 'user',
   logged: false,
 };
 
