@@ -1,30 +1,60 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo1 from '../../Pics/Logo1.webp';
+import Homepagedata from '../../fakedata/Homepagedata';
+import Navbar from '../Navbar';
 
 function Header(): JSX.Element {
   return (
     <div className="bg-black">
+      <div className="w-full absolute flex flex-row justify-start p-10 pl-28 text-center">
+        <Navbar />
+      </div>
       <div className="bg-home-header-bg bg-cover w-screen h-screen flex items-center justify-end">
-        <img src={Logo1} alt="spaceX" className="w-6/12 h-52 mr-14" />
+        <img src={Logo1} alt="spaceX" className="w-6/12 max-h-44 mr-14 mb-56" />
       </div>
       <div className="bg-launches1-bg bg-cover w-screen h-screen bg-opacity-0">
-        <div className="flex-col items-start w-1/2 ml-40">
-          <h1 className="font-bold text-xl pt-44 mb-14">Launches</h1>
-          <p className="mb-7">
-            SpaceX and NASA are targeting no earlier than Monday, November 8 at
-            2:05 p.m. EST, 7:05 UTC, for Dragon to autonomously undock from the
-            International Space Station and splash down approximately 8 hours
-            later off the coast of Florida.
+        <div className="flex-col items-start w-5/12 ml-40">
+          <h1 className="font-bold text-xl pt-44 mb-14">
+            {Homepagedata.titleLaunch}
+          </h1>
+          <p className="mb-7 border-t pt-10 text-justify">
+            {Homepagedata.launchText1}
           </p>
-          <p className="mb-7">
-            Aboard the spacecraft will be Crew-2 astronauts Shane Kimbrough,
-            Megan McArthur, Akihiko Hoshide, Thomas Pesquet, who were launched
-            to the space station from historic Launch Complex 39A (LC-39A) at
-            Kennedy Space Center in Florida on Saturday, April 23, 2021.
-          </p>
-          <button type="button" className="border-2 p-4">
-            Check all launches
+          <p className="mb-7 text-justify">{Homepagedata.launchText2}</p>
+          <button type="button" className="border p-4">
+            <Link to="/Launches">{Homepagedata.buttonLaunch}</Link>
           </button>
+        </div>
+      </div>
+      <div className="bg-rocket1-bg bg-cover w-screen h-screen bg-opacity-0 flex justify-end">
+        <div className="flex-col items-end w-5/12 mr-40">
+          <h1 className="font-bold text-xl pt-44 mb-14">
+            {Homepagedata.titleRocket}
+          </h1>
+          <p className="mb-7 border-t pt-10 text-justify">
+            {Homepagedata.rocketText1}
+          </p>
+          <p className="mb-7 text-justify">{Homepagedata.rocketText2}</p>
+          <button type="button" className="border p-4">
+            <Link to="/Rockets">{Homepagedata.buttonRocket}</Link>
+          </button>
+        </div>
+      </div>
+      <div className="bg-launchPad1-bg bg-cover w-screen h-screen bg-opacity-0 flex flex-col justify-between">
+        <div className="flex-col items-start w-5/12 ml-40">
+          <h1 className="font-bold text-xl pt-44 mb-14">
+            {Homepagedata.titleLaunchPad}
+          </h1>
+          <p className="mb-7 border-t pt-10 text-justify">
+            {Homepagedata.launchPadText}
+          </p>
+          <button type="button" className="border p-4">
+            <Link to="/Lauchpad">{Homepagedata.buttonLaunchPad}</Link>
+          </button>
+        </div>
+        <div className="w-full flex justify-end p-10 pr-40">
+          <Navbar />
         </div>
       </div>
     </div>
