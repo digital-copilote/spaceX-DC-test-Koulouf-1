@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../Pics/Logo2.webp';
+import Logo from '../../assets/Logo2.webp';
 
 function Navbar(): JSX.Element {
   return (
