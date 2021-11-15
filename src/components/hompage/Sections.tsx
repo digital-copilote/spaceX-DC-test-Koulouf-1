@@ -26,11 +26,11 @@ function Sections({ section }: IProps): JSX.Element {
         <p className="mb-7 border-t pt-10 text-justify">{section.Text1}</p>
         <p className="mb-7 text-justify">{section.Text2}</p>
         <button type="button" className="border p-4">
-          <Link to="/Launches">{section.button}</Link>
+          <Link to="/launches">{section.button}</Link>
         </button>
       </div>
       {section.title1 === 'LaunchPads' && (
-        <div className="w-full flex justify-end p-10 pr-40">
+        <div className="w-full flex justify-end p-10 pr-40 pt-96">
           <Navbar />
         </div>
       )}
