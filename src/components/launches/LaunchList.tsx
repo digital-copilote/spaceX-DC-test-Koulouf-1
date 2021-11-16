@@ -16,10 +16,13 @@ function LaunchList(): JSX.Element {
     return <div>...error</div>;
   }
   return (
-    <div className="bg-black w-screen text-white h-screen">
-      {data?.map((launch: any) => (
-        <LaunchDetails launch={launch} />
-      ))}
+    <div className="h-screen w-screen flex flex-col bg-black p-10">
+      <h2 className="text-2xl mb-14 font-bold">All launches</h2>
+      <div className="w-full h-full overflow-y-scroll">
+        {data?.map((launch: any) => (
+          <LaunchDetails launch={launch} />
+        ))}
+      </div>
     </div>
   );
 }

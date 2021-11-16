@@ -9,6 +9,7 @@ module.exports = {
         'launches1-bg': "url('./src/assets/Launches1.webp')",
         'rocket1-bg': "url('./src/assets/Rocket1.webp')",
         'launchPad1-bg': "url('./src/assets/launchPad1.webp')",
+        'launches2-bg': "url('.src/assets/Launches2.webp')",
       },
       fontFamily: { space: ['Space Mono', 'monospace'] },
     },
