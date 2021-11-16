@@ -9,9 +9,9 @@ function Navbar(): JSX.Element {
         <img src={Logo} alt="logo" />
       </Link>
       <Link to="/">Home</Link>
-      <Link to="/Launches">Lauches</Link>
-      <Link to="/Rockets">Rockets</Link>
-      <Link to="/Lauchpad">Launchpad</Link>
+      <Link to="/launches">Lauches</Link>
+      <Link to="/rockets">Rockets</Link>
+      <Link to="/lauchpad">Launchpad</Link>
     </div>
   );
 }

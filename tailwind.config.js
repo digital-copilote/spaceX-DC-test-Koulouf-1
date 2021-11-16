@@ -5,11 +5,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'home-header-bg': "url('./src/Pics/HomeBg2.webp')",
-        'launches1-bg': "url('./src/Pics/Launches1.webp')",
-        'rocket1-bg': "url('./src/Pics/Rocket1.webp')",
-        'launchPad1-bg': "url('./src/Pics/launchPad1.webp')",
+        'home-header-bg': "url('./src/assets/HomeBg2.webp')",
+        'launches1-bg': "url('./src/assets/Launches1.webp')",
+        'rocket1-bg': "url('./src/assets/Rocket1.webp')",
+        'launchPad1-bg': "url('./src/assets/launchPad1.webp')",
+        'launches2-bg': "url('.src/assets/Launches2.webp')",
       },
+      fontFamily: { space: ['Space Mono', 'monospace'] },
     },
   },
   variants: {
