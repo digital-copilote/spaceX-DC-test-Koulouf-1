@@ -7,14 +7,14 @@ import { launches } from '../../API/request';
 import LaunchList from '../../components/launches/LaunchList';
 
 function Launches(): JSX.Element {
-  const { data, isLoading, error } = useQuery<any, AxiosError>(
+  const { data, isLoading, isError } = useQuery<any, AxiosError>(
     ['Launches'],
     () => launches.latest()
   );
   if (isLoading) {
     return <p>...loading</p>;
   }
-  if (error) {
+  if (isError) {
     return <p>...error</p>;
   }
   return (
